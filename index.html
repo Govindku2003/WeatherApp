@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h2>Hello 👋   please search your location ...</h2>
+
+    <div class="search-box">
+      <input type="text" id="search" placeholder="Search location..." />
+      <button onclick="getWeather()">Search</button>
+    </div>
+  </div>
+
+  <!-- MAIN GRID -->
+  <div class="grid">
+
+    <!-- WEATHER CARD -->
+    <div class="card weather">
+      <p class="title">Weather</p>
+      <h1 id="temp">--°C</h1>
+      <p id="condition">--</p>
+
+      <div class="info">
+        <div>
+          <span>Wind</span>
+          <b id="wind">--</b>
+        </div>
+        <div>
+          <span>Humidity</span>
+          <b id="humidity">--</b>
+        </div>
+        <div>
+          <span>Cloud</span>
+          <b id="cloud">--</b>
+        </div>
+      </div>
+    </div>
+
+    <!-- SIDE PANEL -->
+    <div class="card side">
+      <h3 id="location">--</h3>
+      <p id="time">--</p>
+
+      <div class="uv-box">
+        <h2 id="uv">--</h2>
+        <span>UV Index</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ✅ IMPORTANT: GRID KE BAAD ADD KARO -->
+  <div class="bottom-section">
+
+    <!-- HISTORY -->
+    <div class="history">
+      <h3>Previous Days</h3>
+      <div id="historyContainer" class="day-row"></div>
+    </div>
+
+    <!-- FUTURE -->
+    <div class="future">
+      <h3>Next Days</h3>
+      <div id="futureContainer" class="day-row"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
