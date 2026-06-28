@@ -9,6 +9,7 @@ A simple and responsive Weather App built using HTML, CSS, and JavaScript. It al
 * Weather condition icons
 * Responsive design
 * User-friendly interface
+* SEarch weather Perfectvely
 
 ## 🛠️ Technologies Used
 
